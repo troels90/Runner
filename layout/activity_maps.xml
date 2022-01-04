@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundBlue"
+    android:id="@+id/activity_maps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.troels.runner.MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:context="com.example.troels.gpstracker6.MapsActivity"
+        tools:layout="@layout/activity_maps"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_rela"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish Your Run!"
+            android:id="@+id/btn_Publish"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_DidYouWin"
+            android:gravity="center"
+            android:layout_above="@+id/tv_concPace"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PACE"
+            android:id="@+id/tv_concPace"
+            android:gravity="center"
+            android:layout_above="@+id/btn_Publish"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="You ran xx kilometers in:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_runConclusion"
+            android:gravity="center"
+            android:layout_marginBottom="43dp"
+            android:layout_above="@+id/tv_DidYouWin"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

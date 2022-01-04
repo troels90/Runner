@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="50dp"
+    tools:context="com.example.troels.runner.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.troels.bookingappv4.MainActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_UserGreeting" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.troels.bookingappv4.MainActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_NormalRun"
+            style="@style/CategoryStyle"
+            android:background="@color/menu_bar_buttons"
+            android:text="Normal Run"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login"/>
+
+        <TextView
+            android:id="@+id/tv_RaceFriends"
+            style="@style/CategoryStyle"
+            android:background="@color/menu_bar_buttons2"
+            android:text="Race against Friends!"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:layout_below="@+id/login"/>
+
+        <TextView
+            android:id="@+id/tv_Leaderboards"
+            style="@style/CategoryStyle"
+            android:background="@color/menu_bar_buttons"
+            android:text="Leaderboards"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:layout_below="@+id/tv_LiveRun"/>
+
+        <TextView
+            android:id="@+id/tv_FriendList"
+            style="@style/CategoryStyle"
+            android:background="@color/menu_bar_buttons2"
+            android:text="Friends"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:layout_below="@+id/tv_Leaderboards"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Settings"
+        style="@style/CategoryStyle2"
+        android:background="@color/menu_bar_buttons3"
+        android:text="Settings"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tv_UserGreeting"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+    android:id="@+id/tv_Logout"
+    style="@style/CategoryStyle2"
+    android:background="@color/menu_bar_buttons3"
+    android:text="Logout"
+    android:gravity="center"
+    android:layout_height="50dp"
+        android:layout_below="@+id/tv_Settings"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
